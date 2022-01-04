@@ -9,3 +9,9 @@ Relazione/Relazione.bbl
 Relazione/Relazione.fls
 Relazione/Relazione.log
 Relazione/Relazione.run.xml
+*.fdb_latexmk
+*.fls
+*.log
+*.ilg
+*.bcf
+*.toc
