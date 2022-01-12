@@ -161,7 +161,6 @@ In questa immagine abbiamo una raccolta di prime pagine di giornale che ci perme
 Descrizione dell'approccio usato....
 
 
-
 <img src="C:\Users\Utente\Desktop\progetto mio\img8gradiente.png" alt="img8gradiente" style="zoom: 65%;" />
 
 <img src="C:\Users\Utente\Desktop\progetto mio\imgfotogradiente.png" alt="imgfotogradiente" style="zoom: 67%;" />

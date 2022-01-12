@@ -17,3 +17,6 @@ Relazione/Relazione.run.xml
 *.toc
 Relazione/1-introduction.pdf
 Relazione/2-section.pdf
+Relazione/sample.bib
+*.synctex(busy)
+*.gz
