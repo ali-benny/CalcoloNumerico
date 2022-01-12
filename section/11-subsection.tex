@@ -6,11 +6,6 @@ E' richiesto un set di immagini con le seguenti specifiche:
     \item Oggetti di colore uniforme su uno sfondo nero.
 \end{itemize}
 
-\begin{figure}
-    \graphicspath{{./download (3).png}}
-    \caption{Immagine geometrica originale img1.png}
-    \label{fig:img1}
-\end{figure}
 
 Useremo anche altre due immagini di tipo fotografico/medico/astronomico a scelta trovate su internet.
 Quest'ultime saranno importate all'interno del progetto con la libreria \code{skimage}, impostando il flag \verb|as_gray=True| per averle in bianco e nero.
@@ -22,7 +17,12 @@ Le immagini selezionate sono le seguenti:
 \end{description}
 
 \begin{figure}
-    \graphicspath{{./download (2).png}}
-    \caption{Immagine fotografica originale profile.png}
-    \label{fig:profile}
+    \centering
+    \subfigure
+    \includegraphics[width=5cm]{img1}\hfil
+    \includegraphics[width=5cm]{paesaggio}
+    \caption{Immagine geometrica originale img1.png}
+    \label{fig:img1}
+    \caption{Immagine fotografica originale paesaggio.png}
+    \label{fig:paesaggio}
 \end{figure}
