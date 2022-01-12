@@ -6,6 +6,7 @@
 % Set page size and margins
 \usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
 
+
 % Useful packages
 \usepackage{amsmath}
 \usepackage{amssymb} 
@@ -14,25 +15,26 @@
 \usepackage{microtype}
 \usepackage[colorlinks=true,allcolors=teal]{hyperref}
 \usepackage{xcolor}
-\usepackage{subfigure}
+\usepackage{subcaption} % more figure align
 
-\graphicspath{{./img/}}
 % set san-serif font for all the document
 \renewcommand{\familydefault}{\sfdefault}
 % text style to create a code snippet
 \definecolor{codegray}{gray}{0.9}
 \newcommand{\code}[1]{\colorbox{codegray}{\texttt{#1}}}
 
+
 % Title
 \title{\textbf{Relazione Progetto di Calcolo Numerico}}
 \author{Benatti Alice, Manuelli Matteo, Qayyum Shahbaz Ali}
 \date{Gennaio 2022}
 
-\begin{document}
+\begin{document}\graphicspath{{./img/}}
 \maketitle
 
 % Summary
 \tableofcontents
+\newpage
 
 % All content
 \begin{comment}
@@ -59,5 +61,7 @@ gradiente.
     \input{section/12-subsection.tex}
     \input{section/13-subsection.tex}
 \input{section/2-section}
+    \input{section/21-subsection.tex}
+    \input{section/22-subsection.tex}
 
 \end{document}
