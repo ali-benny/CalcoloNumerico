@@ -6,7 +6,6 @@
 % Set page size and margins
 \usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
 
-
 % Useful packages
 \usepackage{amsmath}
 \usepackage{amssymb} 
@@ -15,7 +14,7 @@
 \usepackage{microtype}
 \usepackage[colorlinks=true,allcolors=teal]{hyperref}
 \usepackage{xcolor}
-\usepackage{subcaption} % more figure align
+\usepackage{caption, subcaption}
 
 % set san-serif font for all the document
 \renewcommand{\familydefault}{\sfdefault}
@@ -29,13 +28,13 @@
 \author{Benatti Alice, Manuelli Matteo, Qayyum Shahbaz Ali}
 \date{Gennaio 2022}
 
-\begin{document}\graphicspath{{./img/}}
+\begin{document}
 \maketitle
-
+\addvspace{1cm}
 % Summary
 \tableofcontents
-\newpage
-
+\addvspace{2cm}
+\hrule
 % All content
 \begin{comment}
 Relazione

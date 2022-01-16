@@ -3,3 +3,14 @@ Il metodo del gradiente è un algoritmo che calcola il vettore di minimo globale
 Un vettore $x^{\ast}$ è un punto di minimo globale di $f(x)$ se $f(x^{\ast}) \leq f(x) \forall x \in R^n$.
 Analogamente, un vettore $x^{\ast}$ è un punto di minimo globale in senso stretto di $f(x) se
 f(x^{\ast}) < f(x) \forall x \in R+n \and x \neq x^{\ast}$.
+
+
+2. Metodo di Regolarizzazione di Tikhonov
+Per risolvere il sistema lineare
+\[Ax_\epsilon = b_\epsilon\] con \[b_\epsilon = b+\epsilon\] 
+invece di risolvere direttamente il sistema lineare (se quadrato) o di minimizzare la
+norma 2 del residuo (se il sistema è rettangolare) 2
+$||Ax_\epsilon -b_\epsilon||_2^2$, si aggiunge un
+vincolo di regolarità alla soluzione e si minimizza, ad esempio
+\[||Ax_\epsilon-b_\epsilon||_2^2+\gamma_\epsilon||x_\epsilon||_2^2\]
+che rappresenta la forma standard della regolarizzazione di Tikhonov. 

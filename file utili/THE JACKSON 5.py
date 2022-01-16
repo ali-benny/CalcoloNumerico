@@ -45,10 +45,10 @@ plt.show()
 print("%1.2f\n%d" %(arg1, arg2)) #1 e 2 pad sse mantissa strettamente minore di 2 o parte intera strett. min di 1
 
 #NORME <-> vettori. ERRORE RELATIVO=np.linalg.norm(x - xTrue)/np.linalg.norm(xTrue).
-norm1 = np.linalg.norm(A, 1)
-norm2 = np.linalg.norm(A, 2)
-normfro = np.linalg.norm(A, 'fro')
-norminf = np.linalg.norm(A, np.inf)
+norm1 = np.linalg.norm(A, 1)			# norma 1
+norm2 = np.linalg.norm(A, 2)			# norma 2
+normfro = np.linalg.norm(A, 'fro')		# norma frobenius
+norminf = np.linalg.norm(A, np.inf)		# norma infinita
 
 #CONDIZIONAMENTO K(A)=||A||*||A^-1||. If the condition number is not too much larger than one, the matrix is well-conditioned
 cond1 = np.linalg.cond(A, 1)
