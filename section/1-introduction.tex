@@ -16,3 +16,13 @@ blur Gaussiano ed $\eta$ il rumore additivo con distribuzione Gaussiana di  medi
 
 Per svolgere il progetto si farà uso dei moduli \code{numpy}, \code{skimage} e \code{matplotlib}
 utilizzando il linguaggio Python.
+
+Affinché risultino chiari i valori a cui andremo a riferirci nella relazione, bisogna tenere ben presente il significato di questi due parametri. 
+
+\textbf{PSNR (Peak Signal to Noise Ratio):} Misura la qualità di un immagine ricostruita rispetto all'immagine originale, la formula per calcolarlo è la seguente: \[PSNR = log_{10}(\frac{max\;x^\ast}{\sqrt{MSE}})\]
+
+\textbf{MSE (Mean Squared Error):}  Con la sigla ci riferiamo all'errore quadratico medio ed è così ottenuto: \[MSE = \sqrt[2]{\frac{\sum_{i=1}^n\sum_{j=1}(x^{\ast}_{ij}-x_{ij})}{nm}}\]
+
+I due valori sono inversamente proposizionali, quindi più è alto il PSNR e basso l'MSE, più l'immagine sarà simile all'immagine originale. il PSNR dipende dall'MSE.
+
+\textbf{Deviazione standard:} E' un indice che ci permette di capire in maniera riassuntiva le differenze dei valori per ogni osservazioni rispetto alla media delle variabili. 

@@ -5,8 +5,11 @@ E' richiesto un set di immagini con le seguenti specifiche:
     \item Devono contenere tra i 2 ed i 6 oggetti geometrici;
     \item Oggetti di colore uniforme su uno sfondo nero.
 \end{itemize}
-
-
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{./imgRel/dataset.png}\label{fig:datasetgeometriche}
+    \caption{Immagini geometriche utilizzate}
+\end{figure}
 Useremo anche altre due immagini di tipo fotografico/medico/astronomico a scelta trovate su internet.
 Quest'ultime saranno importate all'interno del progetto con la libreria \code{skimage}, impostando il flag \verb|as_gray=True| per averle in bianco e nero.
 
@@ -16,19 +19,19 @@ Le immagini selezionate sono le seguenti:
     \item[Immagine Fotografica] Che ritrae il volto di una persona in modo dettagliato e con varie tonalità di grigio.
 \end{description}
 
-
-\begin{figure}
+\begin{figure}[h]
     \centering
-    \begin{subfigure}[b]{0.5\textwidth}
+    \begin{subfigure}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.5\linewidth]{./img/img1.png}\label{fig:img1}
-        \subcaption{immagine geometrica img1}
+        \includegraphics[width=0.5\linewidth]{./img/giornale.png}\label{fig:giornale}
+        \subcaption{Immagine con testo}
     \end{subfigure}\hfill
-    \begin{subfigure}[b]{0.5\textwidth}
+    \begin{subfigure}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.5\linewidth]{./img/paesaggio.png}\label{fig:paesaggio}
-        \subcaption{immagine fotografica paesaggio}
+        \includegraphics[width=0.5\linewidth]{./img/pugile.png}\label{fig:pugile}
+        \subcaption{Immagine fotografica}
     \end{subfigure}
-    \caption{Immagini originali analizzate}
+    
+    \caption{Immagini fotografiche analizzate}
 \end{figure}
     

@@ -1,16 +1,32 @@
 \subsection{Metodo del Gradiente}
 Il metodo del gradiente è un algoritmo che calcola il vettore di minimo globale, ovvero:
 Un vettore $x^{\ast}$ è un punto di minimo globale di $f(x)$ se $f(x^{\ast}) \leq f(x) \forall x \in R^n$.
-Analogamente, un vettore $x^{\ast}$ è un punto di minimo globale in senso stretto di $f(x) se
-f(x^{\ast}) < f(x) \forall x \in R+n \and x \neq x^{\ast}$.
 
+Analogamente, un vettore $x^{\ast}$ è un punto di minimo globale in senso stretto di $f(x)$ 
+se $f(x^{\ast}) < f(x) \forall x \in R+n \and x \neq x^{\ast}$.
 
-2. Metodo di Regolarizzazione di Tikhonov
-Per risolvere il sistema lineare
-\[Ax_\epsilon = b_\epsilon\] con \[b_\epsilon = b+\epsilon\] 
-invece di risolvere direttamente il sistema lineare (se quadrato) o di minimizzare la
-norma 2 del residuo (se il sistema è rettangolare) 2
-$||Ax_\epsilon -b_\epsilon||_2^2$, si aggiunge un
-vincolo di regolarità alla soluzione e si minimizza, ad esempio
-\[||Ax_\epsilon-b_\epsilon||_2^2+\gamma_\epsilon||x_\epsilon||_2^2\]
-che rappresenta la forma standard della regolarizzazione di Tikhonov. 
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.9\textwidth}
+        \centering
+    \includegraphics[width=0.7\textwidth]{imgRel/datasetgradiente.png}
+    \caption{Immagini geometriche ripristinate con il metodo del gradiente}
+    \label{fig:geomgradiente}
+    \end{subfigure}
+
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+    \includegraphics[width=0.7\textwidth]{imgRel/fotogrmg.png}
+    \caption{Immagine fotografica ripristinata con il metodo del gradiente}
+    \label{fig:pugilegradiente}
+    \end{subfigure}%
+    \begin{subfigure}{0.3\textwidth}\centering
+        \includegraphics[width=0.7\textwidth]{imgRel/giornalemg.png}
+        \caption{Immagine con testo ripristinata con il metodo del gradiente}
+    \end{subfigure}
+\caption{Immagini analizzate ripristinate con il Metodo del Gradiente}
+    \centering
+    \includegraphics[width=0.7\textwidth]{imgCode/metGrad.png}
+    \caption{Codice Metodo del gradiente applicato ad una singola immagine}
+\end{figure}
+

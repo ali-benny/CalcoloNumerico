@@ -14,14 +14,14 @@
 \usepackage{microtype}
 \usepackage[colorlinks=true,allcolors=teal]{hyperref}
 \usepackage{xcolor}
-\usepackage{caption, subcaption}
+\usepackage{float, caption, subcaption}
 
 % set san-serif font for all the document
 \renewcommand{\familydefault}{\sfdefault}
 % text style to create a code snippet
 \definecolor{codegray}{gray}{0.9}
 \newcommand{\code}[1]{\colorbox{codegray}{\texttt{#1}}}
-
+\DeclareCaptionLabelFormat{andtable}{#1~#2  \&  \tablename~\thetable}
 
 % Title
 \title{\textbf{Relazione Progetto di Calcolo Numerico}}
@@ -30,10 +30,12 @@
 
 \begin{document}
 \maketitle
+%add alma-logo
 \addvspace{1cm}
+\newpage
 % Summary
 \tableofcontents
-\addvspace{2cm}
+\newpage
 \hrule
 % All content
 \begin{comment}
@@ -62,5 +64,7 @@ gradiente.
 \input{section/2-section}
     \input{section/21-subsection.tex}
     \input{section/22-subsection.tex}
-
+    \input{section/23-subsection.tex}
+\input{section/3-osservazioni.tex}
+    \input{section/31-tikhonov.tex}
 \end{document}
