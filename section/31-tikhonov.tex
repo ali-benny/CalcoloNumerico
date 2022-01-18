@@ -11,6 +11,7 @@ si aggiunge un vincolo di regolarità alla soluzione e si minimizza, ad esempio
 \[||Ax_\epsilon-b_\epsilon||_2^2+\gamma_\epsilon||x_\epsilon||_2^2\] che rappresenta la \textbf{forma standard} 
 della regolarizzazione di Tikhonov.
 
+\subsubsection{Immagini geometriche regolarizzate}
 Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione delle immagini del dataset. 
 \begin{figure}[H]
     \centering
@@ -39,10 +40,7 @@ Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione
         \caption{MSE di img2}
         \label{fig:img2MSE}
     \end{subfigure}
-    \caption{Grafici andamento PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione}
-\end{figure}%
-\begin{figure}[H]\ContinuedFloat
-    \centering
+    
     \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img3.png}
@@ -55,7 +53,10 @@ Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione
         \caption{MSE di img3}
         \label{fig:img3MSE}
     \end{subfigure}
-
+    \caption{Grafici andamento PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione}
+\end{figure}%
+\begin{figure}[H]\ContinuedFloat
+    \centering
     \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img4.png}
@@ -94,10 +95,7 @@ Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione
         \caption{MSE di img6}
         \label{fig:img6MSE}
     \end{subfigure}
-    \caption{Grafici andamento PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione}
-\end{figure}%
-\begin{figure}[H]\ContinuedFloat
-    \centering
+    
     \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img7.png}
@@ -110,7 +108,10 @@ Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione
         \caption{MSE di img7}
         \label{fig:img7MSE}
     \end{subfigure}
-
+    \caption{Grafici andamento PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione}
+\end{figure}%
+\begin{figure}[H]\ContinuedFloat
+    \centering
     \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img8.png}
@@ -126,6 +127,7 @@ Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione
 \caption{Grafici andamento PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione}
 \end{figure}
 
+\subsubsection{Immagini fotografiche e con testo regolarizzate}
 Per quanto riguarda le immagini fotografiche, abbiamo riscontrato un curioso errore. 
 
 \begin{figure}[H]

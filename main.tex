@@ -12,8 +12,12 @@
 \usepackage{comment}    %scrivere commenti multirighe
 \usepackage{graphicx, wrapfig}
 \usepackage{microtype}
-\usepackage[colorlinks=true,allcolors=teal]{hyperref}
 \usepackage{xcolor}
+\definecolor{bblue}{HTML}{3F88C5}
+\definecolor{ggreen}{HTML}{44BBA4}
+\definecolor{oorange}{HTML}{FC814A}
+\definecolor{rred}{HTML}{D00000}
+\usepackage[colorlinks=true,allcolors=bblue]{hyperref}
 \usepackage{float, caption, subcaption}
 
 % set san-serif font for all the document
@@ -30,13 +34,17 @@
 
 \begin{document}
 \maketitle
-%add alma-logo
-\addvspace{1cm}
+\begin{figure}[b]
+    \centering
+    \includegraphics[width=0.6\textwidth]{imgRel/alma-logo.jpg}
+\end{figure}
 \newpage
+
 % Summary
 \tableofcontents
 \newpage
-\hrule
+%\hrule
+
 % All content
 \begin{comment}
 Relazione
@@ -65,7 +73,7 @@ gradiente.
     \input{section/21-subsection.tex}
     \input{section/22-subsection.tex}
     \input{section/23-subsection.tex}
-\input{section/3-osservazioni.tex}
+\input{section/3-section.tex}
     \input{section/31-tikhonov.tex}
     \newpage
 \input{section/4-section.tex}
