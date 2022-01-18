@@ -294,8 +294,7 @@ Per calcolare il gradiente dell'immagine $\nabla u$ usiamo la funzione np.gradie
 \end{align*}$
 il cui gradiente $\nabla f$ è dato da
 
-​                                          $\begin{align*}
-\nabla f(x) = (A^TAx - A^Tb)  + \lambda \nabla TV(x)
+​                      immagine A^Tb)  + \lambda \nabla TV(x)
 \end{align*}$
 
 

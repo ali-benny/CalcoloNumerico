@@ -12,7 +12,6 @@ si aggiunge un vincolo di regolarità alla soluzione e si minimizza, ad esempio
 della regolarizzazione di Tikhonov.
 
 Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione delle immagini del dataset. 
-
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.5\textwidth}
@@ -40,7 +39,10 @@ Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione
         \caption{MSE di img2}
         \label{fig:img2MSE}
     \end{subfigure}
-
+    \caption{Grafici andamento PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione}
+\end{figure}%
+\begin{figure}[H]\ContinuedFloat
+    \centering
     \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img3.png}
@@ -92,7 +94,10 @@ Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione
         \caption{MSE di img6}
         \label{fig:img6MSE}
     \end{subfigure}
-
+    \caption{Grafici andamento PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione}
+\end{figure}%
+\begin{figure}[H]\ContinuedFloat
+    \centering
     \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img7.png}
@@ -118,4 +123,16 @@ Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione
         \caption{MSE di img8}
         \label{fig:img8MSE}
     \end{subfigure}
+\caption{Grafici andamento PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione}
 \end{figure}
+
+Per quanto riguarda le immagini fotografiche, abbiamo riscontrato un curioso errore. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{output/outputERROR.png}
+    \caption{Errore immagini fotografiche}
+    \label{fig:errorOutput}
+\end{figure}
+
+Possiamo affermare che l'incremento è talmente impercettibile che non viene colto dal calcolatore poiché inferiore alla sua precisione macchina, con la regolarizzazione si ottengono comunque risultati migliori. 
