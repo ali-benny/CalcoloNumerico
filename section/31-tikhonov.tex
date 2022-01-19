@@ -13,128 +13,116 @@ della regolarizzazione di Tikhonov.
 
 \subsubsection{Immagini geometriche regolarizzate}
 Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione delle immagini del dataset. 
-\begin{figure}[H]
-    \centering
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img1.png}
-        \caption{PSNR di img1}
-        \label{fig:img1PSNR}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/MSE/outputMSE-img1.png}
-        \caption{MSE di img1}
-        \label{fig:img1MSE}
-    \end{subfigure}
 
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img2.png}
-        \caption{PSNR di img2}
-        \label{fig:img2PSNR}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/MSE/outputMSE-img2.png}
-        \caption{MSE di img2}
-        \label{fig:img2MSE}
-    \end{subfigure}
-    
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img3.png}
-        \caption{PSNR di img3}
-        \label{fig:img3PSNR}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/MSE/outputMSE-img3.png}
-        \caption{MSE di img3}
-        \label{fig:img3MSE}
-    \end{subfigure}
-    \caption{Grafici andamento PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione}
-\end{figure}%
-\begin{figure}[H]\ContinuedFloat
-    \centering
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img4.png}
-        \caption{PSNR di img4}
-        \label{fig:img4PSNR}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/MSE/outputMSE-img4.png}
-        \caption{MSE di img4}
-        \label{fig:img4MSE}
-    \end{subfigure}
-
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img5.png}
-        \caption{PSNR di img5}
-        \label{fig:img5PSNR}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/MSE/outputMSE-img5.png}
-        \caption{MSE di img5}
-        \label{fig:img5MSE}
-    \end{subfigure}
-
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img6.png}
-        \caption{PSNR di img6}
-        \label{fig:img6PSNR}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/MSE/outputMSE-img6.png}
-        \caption{MSE di img6}
-        \label{fig:img6MSE}
-    \end{subfigure}
-    
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img7.png}
-        \caption{PSNR di img7}
-        \label{fig:img7PSNR}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/MSE/outputMSE-img7.png}
-        \caption{MSE di img7}
-        \label{fig:img7MSE}
-    \end{subfigure}
-    \caption{Grafici andamento PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione}
-\end{figure}%
-\begin{figure}[H]\ContinuedFloat
-    \centering
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/PSNR/outputPSNR-img8.png}
-        \caption{PSNR di img8}
-        \label{fig:img8PSNR}
-    \end{subfigure}\hfill
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{output/MSE/outputMSE-img8.png}
-        \caption{MSE di img8}
-        \label{fig:img8MSE}
-    \end{subfigure}
-\caption{Grafici andamento PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione}
-\end{figure}
-
-\subsubsection{Immagini fotografiche e con testo regolarizzate}
-Per quanto riguarda le immagini fotografiche, abbiamo riscontrato un curioso errore. 
+Grafici andamento PSNR, media PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{output/outputERROR.png}
-    \caption{Errore immagini fotografiche}
-    \label{fig:errorOutput}
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imgRicostruzione/grafico1minimize.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzione1minimize.png}
+    \end{subfigure}
+    \caption{Ricostruzione immagine geometrica img1.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
+    
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imgRicostruzione/grafico2minimize.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzione2minimize.png}
+    \end{subfigure}
+    \caption{Ricostruzione immagine geometrica img2.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
+    
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imgRicostruzione/grafico3minimize.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzione3minimize.png}
+    \end{subfigure}
+    \caption{Ricostruzione immagine geometrica img3.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
+
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imgRicostruzione/grafico4minimize.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzione4minimize.png}
+    \end{subfigure}
+    \caption{Ricostruzione immagine geometrica img4.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imgRicostruzione/grafico5minimize.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzione5minimize.png}
+    \end{subfigure}
+    \caption{Ricostruzione immagine geometrica img5.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
+    
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imgRicostruzione/grafico6minimize.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzione6minimize.png}
+    \end{subfigure}
+    \caption{Ricostruzione immagine geometrica img6.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
+    
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imgRicostruzione/grafico7minimize.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzione7minimize.png}
+    \end{subfigure}
+    \caption{Ricostruzione immagine geometrica img7.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
+
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imgRicostruzione/grafico8minimize.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzione8minimize.png}
+    \end{subfigure}
+    \caption{Ricostruzione immagine geometrica img8.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
 \end{figure}
 
-Possiamo affermare che l'incremento è talmente impercettibile che non viene colto dal calcolatore poiché inferiore alla sua precisione macchina, con la regolarizzazione si ottengono comunque risultati migliori. 
+\subsubsection{Immagini fotografiche regolarizzate}
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imgRicostruzione/graficoCameraman_minimize.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzioneCameraman_minimize.png}
+    \end{subfigure}
+    \caption{Ricostruzione immagine fotografica data.camera() [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
+    
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imgRicostruzione/graficoPugile_minimize.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzionePugile_minimize.png}
+    \end{subfigure}
+    \caption{Ricostruzione immagine fotografica pugile.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
+    
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{imgRicostruzione/graficoGiornale_minimize.png}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzioneGiornale_minimize.png}
+    \end{subfigure}
+    \caption{Ricostruzione immagine fotografica giornale.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
+\end{figure}

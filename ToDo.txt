@@ -1,0 +1,10 @@
+1) Creare grafici e immagini confronto anche per metodo gradiente, controllando prima i valori di lambda
+2) fare meglio grafici tot var, rinunciando a subplot => due plot dove nel secondo confronti err rel e mse (deducendo che hanno lo stesso comportamento)
+3) nell'ultima cella cercare la fotoMaxPSNR di ogni figura geometrica( o di due/3  scelte?) con un suo grafico e plottarlo
+FATTO4) al posto di B caricare fin dall'inizio un'altra immagine per effettuare la "seconda esecuzione" del punto 4 della relazione (ricordati di maxit = 50!!!)
+5) mi passeranno la relazione e sul remarkable la valuta scrivendo suggerimenti
+
+Relazione:
+- analizzare e descrivere MGC vs MG (sezione 2.3)
+- 3.1 da aggiungere eventuali descrizioni per osservazioni o cose
+- 4.1 e 4.2 descrivere le var totali di pugile e giornale
