@@ -21,3 +21,4 @@ Relazione/sample.bib
 *.synctex(busy)
 *.gz
 .vscode/settings.json
+*.out

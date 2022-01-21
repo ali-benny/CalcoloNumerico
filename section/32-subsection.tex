@@ -1,0 +1,60 @@
+\subsection{Metodo di Regolarizzazione di Tikhonov}
+Per ridurre gli effetti del rumore nella ricostruzione è necessario introdurre un termine di regolarizzazione di Tikhonov. 
+
+Si considera quindi il seguente problema di ottimizzazione:
+
+Si deve risolvere $Ax_\epsilon = b_\epsilon$ con $b_\epsilon = b+\epsilon$. 
+Al posto di risolvere direttamente il sistema lineare (se il sistema è quadrato) o di minimizzare la norma 2 del residuo 
+(se il sistema è rettangolare)  $||Ax_\epsilon -b_\epsilon||_2^2$, %! davvero dobbiamo mettere la formula?!
+
+si aggiunge un vincolo di regolarità alla soluzione e si minimizza, ad esempio 
+\[||Ax_\epsilon-b_\epsilon||_2^2+\gamma_\epsilon||x_\epsilon||_2^2\] che rappresenta la \textbf{forma standard} 
+della regolarizzazione di Tikhonov.
+
+\begin{figure}[H]
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico1Tik.png}
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/ricostruzione1Tik.png}
+    \caption{Ricostruzione immagine geometrica img1.png}
+
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico2Tik.png}
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/ricostruzione2Tik.png}
+    \caption{Ricostruzione immagine geometrica img2.png}
+
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico3Tik.png}
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/ricostruzione3Tik.png}
+    \caption{Ricostruzione immagine geometrica img3.png}
+
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico4Tik.png}
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/ricostruzione4Tik.png}
+    \caption{Ricostruzione immagine geometrica img4.png}
+
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico5Tik.png}
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/ricostruzione5Tik.png}
+    \caption{Ricostruzione immagine geometrica img5.png}
+
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico6Tik.png}
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/ricostruzione6Tik.png}
+    \caption{Ricostruzione immagine geometrica img6.png}
+
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico7Tik.png}
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/ricostruzione7Tik.png}
+    \caption{Ricostruzione immagine geometrica img7.png}
+
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico8Tik.png}
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/ricostruzione8Tik.png}
+    \caption{Ricostruzione immagine geometrica img8.png}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/graficoCameramanTik.png}
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/ricostruzioneCameramanTik.png}
+    \caption{Ricostruzione immagine fotografica data.camera()}
+
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/graficoPugileTik.png}
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/ricostruzionePugileTik.png}
+    \caption{Ricostruzione immagine fotografica pugile.png}
+
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/graficoAlbumTik.png}
+    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/ricostruzioneAlbumTik.png}
+    \caption{Ricostruzione immagine fotografica album.png}
+\end{figure}
