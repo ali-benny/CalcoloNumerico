@@ -690,3 +690,12 @@ ed aggiunge rumore gaussiano con deviazione standard (0, 0.05)
     \captionsetup{labelformat=andtable}
     \caption{Immagini corrotte con noise = 0.02}
 \end{figure}
+Notiamo che tutte le immagini all'aumentare del valore della deviazione standard peggiorano 
+qualitativamente, con $\sigma = 0.5$ e deviazione standard 0.02 abbiamo per esempio un PSNR in 
+media vicino al 30. Invece aumentando la deviazione standard a 0.32 scende addirittura attorno al 9 con delle 
+immagini che tendono a risultare molto sfocate e 'disturbate' dal rumore guassiano. 
+All'aumentare delle dimensioni di Kernel a $\sigma = 1$ di dimensioni $7 \times 7$ notiamo che partendo 
+da una dev. standard 0.02 abbiamo un PSNR in media leggermente inferiore rispetto alla precedente dimensione 
+del Kernel.
+La cosa si ripete quando si passa a $\sigma = 1.3$: i valori di PSNR delle rispettive immagini decrescono 
+rispetto ai valori ottenuti dalle precedenti dimensioni del Kernel.

@@ -5,20 +5,21 @@ Un vettore $x^{\ast}$ è un punto di minimo globale di $f(x)$ se $f(x^{\ast}) \l
 Analogamente, un vettore $x^{\ast}$ è un punto di minimo globale in senso stretto di $f(x)$ 
 se $f(x^{\ast}) < f(x) \forall x \in R+n \and x \neq x^{\ast}$.
 
+
+
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.9\textwidth}
         \centering
-    \includegraphics[width=0.7\textwidth]{imgRel/datasetgradiente.png}
+    \includegraphics[width=0.7\textwidth]{imgRel/datasetgradiente.png}\label{fig:geomgradiente}
     \caption{Immagini geometriche ripristinate}
-    \label{fig:geomgradiente}
     \end{subfigure}
 
     \begin{subfigure}{0.5\textwidth}
         \centering
-    \includegraphics[width=0.6\linewidth]{imgRel/fotogrmg.png}
-    \caption{Immagine fotografica ripristinata}
-    \label{fig:pugilegradiente}
+        \includegraphics[width=0.6\linewidth]{imgRel/fotogrmg.png}
+        \caption{Immagine fotografica ripristinata}
+        \label{fig: pugilemg1}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}\centering
         \includegraphics[width=0.6\linewidth]{imgRel/giornalemg.png}
@@ -32,3 +33,9 @@ se $f(x^{\ast}) < f(x) \forall x \in R+n \and x \neq x^{\ast}$.
     \caption{Codice Metodo del gradiente applicato ad una singola immagine}
 \end{figure}
 
+Notiamo anche qui che l'immagine ripristinata ha un PSNR molto piú alto rispetto all'immagine corrotta. 
+Questo risulta in un'immagine con una qualità corretta e simile all'immgine originale.
+
+Per esempio considerando l'immagine fotografica avremo che:\\
+\textbf{Immagine ripristinata \ref{fig: pugilemg1}} PSNR: 30.359067\\
+\textbf{Immagine corrotta \ref{fig:fotogrCorrotte7x7}} PSNR: 30.9049\\
