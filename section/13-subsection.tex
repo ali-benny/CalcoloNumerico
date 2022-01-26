@@ -5,7 +5,7 @@ Osserviamo il risultato su un'immagine scelta casualmente del set creato e sulle
 Ricordiamo che più è alto il valore del PSNR maggiore sarà la vicinanza dell'immagine corrotta rispetto alla versione originale. 
 
 \subsubsection{Analisi immagine geometrica}
-Analizziamo l'immagine img8.png al variare del valore $\sigma$:
+Analizziamo l'immagine img8.png al variare del valore $\sigma$ con Dev.Std = 0.05:
 
 \begin{figure}[H]
     \centering
@@ -30,12 +30,14 @@ Analizziamo l'immagine img8.png al variare del valore $\sigma$:
     \caption{Immagine geometrica corrotta al variare di $\sigma$}
     \label{fig:8corrotto}
 \end{figure}
-Le figure di sinistra rappresentano l'immagine originale, invece a destra sono riportate le immagini corrotte con i rispettivi valori di PSNR. 
-Notiamo che all'aumentare delle dimensioni di sigma il valore di PSNR diminuisce che denota un peggioramento della qualità dell'immagine, 
-infatti le immagini subiscono un'appiattimento dell'intensità della scala dei colori e i contorni delle varie figure geometriche perdono di fermezza. 
-%! da finire
+Le figure di sinistra rappresentano l'immagine originale, invece a destra sono riportate le immagini corrotte 
+con i rispettivi valori di PSNR e MSE. 
+Notiamo che all'aumentare delle dimensioni di sigma il valore di PSNR diminuisce che denota un peggioramento 
+della qualità dell'immagine, infatti le immagini subiscono un'appiattimento dell'intensità della scala dei 
+colori e i contorni delle varie figure geometriche perdono di fermezza. 
 
 \subsubsection{Analisi immagini fotografiche}
+Analizziamo le immagini fotografiche al variare del valore $\sigma$ con Dev.Std 0.05:
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.67\textwidth}

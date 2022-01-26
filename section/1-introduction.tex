@@ -1,28 +1,35 @@
 Il progetto ha come scopo quello di comprendere e mettere in atto metodi per ricostruire 
-immagini blurrate e svolgere il lavoro opposto, quindi generare immagini corrotte (dal rumore) a partire da un immagine 
-originale. 
+immagini blurrate e svolgere il lavoro opposto, quindi generare immagini corrotte dal rumore 
+a partire da un immagine originale. 
 
 Il problema che ci è stato presentato riguarda la ricostruzione di 
 immagini corrotte attraverso il blur Gaussiano.
 
 Verrà analizzata inizialmente l'immagine \code{data.camera()} importata da
-\code{skimage}, successivamente verranno analizzate un set di 8 immagini con oggetti geometrici di colore uniforme su sfondo
- nero, realizzate da noi.
+\code{skimage}, successivamente verranno analizzate un set di 8 immagini con oggetti geometrici
+ di colore uniforme su sfondo nero, realizzate da noi.
 
-Il problema di deblur consiste nella ricostruzione di un immagine a partire da un dato acquisito mediante il seguente modello:
+Il problema di deblur consiste nella ricostruzione di un immagine a partire da un dato acquisito
+ mediante il seguente modello:
 \[b=Ax+\eta\]
-dove $b$ rappresenta l'immagine corrotta, $x$ l'immagine originale che vogliamo ricostruire, $A$ l'operatore che applica il 
-blur Gaussiano ed $\eta$ il rumore additivo con distribuzione Gaussiana di  media $\mathbb{0}$ e deviazione standard $\sigma$.
+dove $b$ rappresenta l'immagine corrotta, $x$ l'immagine originale che vogliamo ricostruire, $A$ 
+l'operatore che applica il blur Gaussiano ed $\eta$ il rumore additivo con distribuzione Gaussiana di
+ media $\mathbb{0}$ e deviazione standard $\sigma$.
 
 Per svolgere il progetto si farà uso dei moduli \code{numpy}, \code{skimage} e \code{matplotlib}
 utilizzando il linguaggio Python.
 
-Affinché risultino chiari i valori a cui andremo a riferirci nella relazione, bisogna tenere ben presente il significato di questi due parametri. 
+Affinché risultino chiari i valori a cui andremo a riferirci nella relazione, bisogna tenere ben presente 
+il significato di questi due parametri. 
 
-\textbf{PSNR (Peak Signal to Noise Ratio):} Misura la qualità di un immagine ricostruita rispetto all'immagine originale, la formula per calcolarlo è la seguente: \[PSNR = log_{10}(\frac{max\;x^\ast}{\sqrt{MSE}})\]
+\textbf{PSNR (Peak Signal to Noise Ratio):} Misura la qualità di un immagine ricostruita rispetto all'immagine 
+originale, la formula per calcolarlo è la seguente: \[PSNR = log_{10}(\frac{max\;x^\ast}{\sqrt{MSE}})\]
 
-\textbf{MSE (Mean Squared Error):}  Con la sigla ci riferiamo all'errore quadratico medio ed è così ottenuto: \[MSE = \sqrt[2]{\frac{\sum_{i=1}^n\sum_{j=1}(x^{\ast}_{ij}-x_{ij})}{nm}}\]
+\textbf{MSE (Mean Squared Error):}  Con la sigla ci riferiamo all'errore quadratico medio ed è così ottenuto:
+ \[MSE = \sqrt[2]{\frac{\sum_{i=1}^n\sum_{j=1}(x^{\ast}_{ij}-x_{ij})}{nm}}\]
 
-I due valori sono inversamente proposizionali, quindi più è alto il PSNR e basso l'MSE, più l'immagine sarà simile all'immagine originale. il PSNR dipende dall'MSE.
+I due valori sono inversamente proposizionali, quindi più è alto il PSNR e basso l'MSE, più l'immagine sarà 
+simile all'immagine originale. il PSNR dipende dall'MSE.
 
-\textbf{Deviazione standard:} E' un indice che ci permette di capire in maniera riassuntiva le differenze dei valori per ogni osservazioni rispetto alla media delle variabili. 
+\textbf{Deviazione standard:} E' un indice che ci permette di capire in maniera riassuntiva le differenze dei 
+valori per ogni osservazioni rispetto alla media delle variabili. 
