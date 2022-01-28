@@ -1,0 +1,83 @@
+ovvero abbiamo generato corrotte => ovvero generando immagini corrotte
+
+bisogna tenere ben presente il significato di
+questi due parametri => bisogna tenere ben presente il significato di
+questi tre parametri.
+
+E' necessario
+caricare l’immagine nel progetto con il comando ?? per importarla all’interno del progetto e poterla analizzare. =>
+E' necessario
+caricare l’immagine nel progetto con il comando per poterla analizzare (quando pulisco il codice tolgo /img per non creare confusione)
+
+
+infatti i valori di PSNR e MSE sono
+pressocchè uguali, quasi come se fossero livellati =>
+infatti i valori di PSNR sono pressocchè uguali tra di loro, quasi come se fossero stati pareggiati (o livellati)
+
+(non 0.05!)
+Analizziamo l’immagine img8.png al variare del valore σ con noise = 0.05: =>
+Analizziamo l’immagine img8.png al variare del valore σ con noise fissato uguale a 0.02:
+
+
+Analizziamo le immagini fotografiche al variare del valore σ con noise 0.05: =>
+Analizziamo le immagini fotografiche al variare del valore σ con noise fissato pari a 0.02:
+
+... definita positiva e consente di risolvere il sistema in un numero di iterazioni che è al massimo n =>
+definita positiva e consente di risolvere il sistema in un numero di iterazioni che è al massimo n (in aritmetica esatta).
+
+Il paragrafino "2.1.1 Risultati della soluzione naive" va sotto la tabella 18, poichè parla dei risultati ottenuti con entrambi i metodi naive.
+
+
+nella frase "Analogamente, un vettore x∗ è un punto di minimo globale in senso stretto di f(x) se..." cancellare "R+ nx != x*" e aggiungere "R^n \ {x*}
+
+che la ricerca in linea esatta è finalizzata essenzialmente, ad assicurare => che la ricerca in linea esatta è impiegata essenzialmente ad assicurare
+
+Algorithm 1 Metodo del Gradiente in pseudocode =>
+Algorithm  Metodo di discesa generale in pseudocode
+
+calcolare la direzione di discesa dk (dipendente da ∇f(xk)) =>
+calcolare la direzione di discesa dk (influenzato da ∇f(xk))
+
+end while =>
+end while
+return x_last
+
+generale comune per entrambe le esecuzioni =>
+generale comune ad entrambe le esecuzioni
+
+Abbiamo riscontrato che il metodo del gradiente con ricerca in linea esatta è più veloce a raggiungere un punto dove ∇f(x*) = 0 =>
+Abbiamo riscontrato che il metodo del gradiente con ricerca in linea inesatta è più veloce a raggiungere un intorno di un punto x* tale che ∇f(x*) = 0
+
+Per questo motivo, considerando che in linea di principio molto generale,
+in entrambii metodi l’iterata successiva si calcola come:
+xk+1 = xk − ak·∇f(xk)
+allora avverrà che nel metodo del gradiente =>
+(a capo) Per questo motivo, considerando che i metodi di discesa sono definiti dall’iterazione (grasseto)generale(/grassetto) (a capo)(centrato) xk+1 = xk − ak·dk(a capo) e si differenziano per la scelta della direzione di discesa e della lunghezza del passo dk e ak, le quali sono fortemente influenzate da ∇f(xk) (https://virtuale.unibo.it/mod/resource/view.php?id=750335 pg 65/79 per CG)(la parentesi con il link e il numero di pagina aggiungerla così com'è), allora avverrà che nel metodo del gradiente
+
+
+Metodi di Regolarizzazione => Regolarizzazione
+
+I metodi di regolarizzazione => I metodi regolarizzati
+
+ma invece calcolano la soluzione di un problema leggermente diverso ma meglio condizionato =>
+calcolando invece la soluzione di un problema leggermente "deviato", ovvero prendendo meno di riferimento il termine noto B che corrisponde all'immagine disturbata dal rumore(a capo)(aggiungi centrata con dimensione media la foto Regolarizzazione.jpg)
+
+qualsiasi valore di λ => qualsiasi valore λ
+
+Per ridurre gli effetti del rumore nella ricostruzione è necessario introdurre un termine di regolarizzazione di Tikhonov.=>
+Per ridurre gli effetti del rumore nella ricostruzione si può aggiungere al problema precendente un termine di regolarizzazione di Tikhonov
+
+Si deve risolvere Ax ε = b ε con b ε = b + ε. (cancella questa frase, descriviamo subito dopo la stessa cosa ma in maniera più approfondità. al massimo puoi inserirla come formula secondaria sotto la formula principale di Tik)
+
+si aggiunge un vincolo di regolarità alla soluzione e si minimizza =>
+si aggiungi un termine "rilassatore" al problema naive precedente e lo si minimizza
+
+che rappresenta la forma standard della regolarizzazione di Tikhonov. (cancella frase)
+
+
+riguardo i grafici proseguimento TOT VAR, aggiungi sopra al titolo di ognuno di essi "Proseguimento oscillante dei valori PSNR con\nregolarizzazione TOT VAR i quali però, per lambda che tende a infinito, tendono a 0"
+
+Inoltre ... -¿ relazione koci o Tassi XD => cancella pure. La nostra relazione si basa su gli stessi grafici di Koci & co, facendo notare però cose diverse;)
+
+
+
