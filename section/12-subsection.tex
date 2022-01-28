@@ -1,6 +1,6 @@
-\subsection{Generazione Immagini Corrotte}
+{\color{bblue}\subsection{Generazione Immagini Corrotte}}
 \textbf{Obiettivo:}
-Degradare le immagini applicando, mediante le funzioni riportate \\lla cella precedente,  l'operatore di blur con parametri
+Degradare le immagini applicando, mediante le funzioni fornite, l'operatore di blur con parametri:
 \begin{itemize}
     \item{$\sigma=0.5$ dimensione $5\times 5$}
     \item{$\sigma=1$ dimensione $7\times 7$}
@@ -19,7 +19,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 5 & 0.5 & 0.02 & 29.8344 & 0.00103886 \\
                 pugile.png & 5 & 0.5 & 0.02 & 32.3195 & 0.0005862\\
                 img1.png & 5 & 0.5 & 0.02 & 29.9493 & 0.00101175 \\
@@ -36,9 +36,9 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 30.772611701896455           \\
             Media MSE            & 0.0008494089846671857        \\
             Dev. Std. PSNR       & 0.7547454045875164           \\
@@ -62,7 +62,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 5 & 0.5 & 0.04 & 26.5112 & 0.00223297 \\
                 pugile.png & 5 & 0.5 & 0.04 & 27.4667 & 0.0017919 \\
                 img1.png & 5 & 0.5 & 0.04 & 26.5452 & 0.00221553 \\
@@ -79,9 +79,9 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 26.891734569652385           \\
             Media MSE            & 0.002050504949458885        \\
             Dev. Std. PSNR       & 0.3007954092260605           \\
@@ -105,7 +105,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 5 & 0.5 & 0.08 &  21.5325 &  0.00702666 \\ 
                 pugile.png & 5 & 0.5 & 0.08 & 21.7986 & 0.0066091\\ 
                 img1.png & 5 & 0.5 & 0.08 & 21.5332 & 0.00702558 \\
@@ -116,16 +116,15 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
                 img6.png & 5 & 0.5 & 0.08 & 21.6626 & 0.00681931 \\
                 img7.png & 5 & 0.5 & 0.08 & 21.633 & 0.00686601 \\
                 img8.png & 5 & 0.5 & 0.08 & 21.519 & 0.00704858 \\\hline
-            \end{tabular}\label{tab:tabcorrotte3}
-     %
-    }   
+            \end{tabular}\label{tab:tabcorrotte3}%
+        }   
         \end{minipage}%
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 21.656429313389726           \\
             Media MSE            & 0.00683046240248098       \\
             Dev. Std. PSNR       & 0.08995967536472305           \\
@@ -149,7 +148,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 5 & 0.5 & 0.16 & 15.7869 & 0.0263819 \\
                 pugile.png & 5 & 0.5 & 0.16 & 15.89 & 0.0257632 \\
                 img1.png & 5 & 0.5 & 0.16 & 15.8162 & 0.0262048 \\
@@ -160,16 +159,15 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
                 img6.png & 5 & 0.5 & 0.16 & 15.8537 & 0.0259797 \\
                 img7.png & 5 & 0.5 & 0.16 & 15.849 & 0.0260077 \\
                 img8.png & 5 & 0.5 & 0.16 & 15.8161 & 0.0262051 \\ \hline
-            \end{tabular}\label{tab:tabcorrotte4}
-     %
-    }   
+            \end{tabular}\label{tab:tabcorrotte4}%
+        }   
         \end{minipage}%
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 15.821291629768288           \\
             Media MSE            & 0.026174436676272776        \\
             Dev. Std. PSNR       & 0.02377710929356369          \\
@@ -193,7 +191,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 5 & 0.5 & 0.32 & 9.90122 & 0.102301 \\
                 pugile.png & 5 & 0.5 & 0.32 & 9.89115 & 0.102538 \\
                 img1.png & 5 & 0.5 & 0.32 & 9.8721 & 0.102989 \\                 
@@ -204,16 +202,15 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
                 img6.png & 5 & 0.5 & 0.32 & 9.88154 & 0.102765 \\
                 img7.png & 5 & 0.5 & 0.32 & 9.88 & 0.102802 \\              
                 img8.png & 5 & 0.5 & 0.32 & 9.87102 & 0.103014 \\  \hline
-            \end{tabular}\label{tab:tabcorrotte5}  
-   %
-}     
+            \end{tabular}\label{tab:tabcorrotte5}%
+        }     
         \end{minipage}%
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 9.908921219921675         \\
             Media MSE            & 0.10211940428183572      \\
             Dev. Std. PSNR       & 0.005854966950232008        \\
@@ -237,7 +234,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 7 & 1 & 0.02 & 27.9965 & 0.00158617 \\
                 pugile.png & 7 & 1 & 0.02 & 30.9284 & 0.000807527 \\
                 img1.png & 7 & 1 & 0.02 & 28.3054 & 0.00147726 \\
@@ -248,16 +245,15 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
                 img6.png & 7 & 1 & 0.02 & 29.6228 & 0.00109074 \\ 
                 img7.png & 7 & 1 & 0.02 & 29.2918 & 0.00117711 \\
                 img8.png & 7 & 1 & 0.02 & 28.2434 & 0.00149851 \\ \hline
-            \end{tabular}\label{tab:tabcorrotte6}
-     %
-    }   
+            \end{tabular}\label{tab:tabcorrotte6}%
+        }   
         \end{minipage}%
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 29.2560497491376        \\
             Media MSE            & 0.0012124124340562978       \\
             Dev. Std. PSNR       & 0.903380822617657        \\
@@ -281,7 +277,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 7 & 1 & 0.04 & 25.5438 & 0.00279009 \\
                 pugile.png & 7 & 1 & 0.04 & 26.9696 & 0.00200928 \\
                 img1.png & 7 & 1 & 0.04 & 25.7196 & 0.00267942 \\
@@ -298,9 +294,9 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 26.195844232338864         \\
             Media MSE            & 0.0024139860627763257       \\
             Dev. Std. PSNR       & 0.4492018368928465       \\
@@ -324,7 +320,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 7 & 1 & 0.08 & 21.2232 &  0.0075453 \\
                 pugile.png & 7 & 1 & 0.08 & 21.6733 & 0.00680245 \\ 
                 img1.png & 7 & 1 & 0.08 & 21.2586 & 0.00748406 \\
@@ -341,9 +337,9 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 21.429621292884747         \\
             Media MSE            & 0.0071992640601343085     \\
             Dev. Std. PSNR       & 0.14744138849178753         \\
@@ -367,7 +363,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 7 & 1 & 0.16 & 15.7309 & 0.0267244 \\
                 pugile.png & 7 & 1 & 0.16 & 15.8496 & 0.0260039 \\
                 img1.png & 7 & 1 & 0.16 & 15.7444 & 0.0266415 \\
@@ -385,9 +381,9 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 15.79693992935469          \\
             Media MSE            & 0.026322419224025406    \\
             Dev. Std. PSNR       & 0.04145677255353015          \\
@@ -411,7 +407,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 7 & 1 & 0.32 & 9.85731 & 0.10334 \\
                 pugile.png & 7 & 1 & 0.32 & 9.87496 & 0.102921 \\    
                 img1.png & 7 & 1 & 0.32 & 9.84505 & 0.103632 \\ 
@@ -429,9 +425,9 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 9.868096562243034         \\
             Media MSE            & 0.10308404121278847    \\
             Dev. Std. PSNR       & 0.009739789869654458        \\
@@ -455,7 +451,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 9 & 1.3 & 0.02 &  27.4138  & 0.00181392 \\
                 pugile.png & 9 & 1.3 & 0.02 & 30.3576 & 0.0009209\\
                 img1.png & 9 & 1.3 & 0.02 & 27.7886 & 0.00166394 \\
@@ -466,16 +462,15 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
                 img6.png & 9 & 1.3 & 0.02 & 29.1727 & 0.00120986 \\
                 img7.png & 9 & 1.3 & 0.02 & 28.8132 & 0.00131424 \\
                 img8.png & 9 & 1.3 & 0.02 & 27.7142 & 0.00169269 \\ \hline
-            \end{tabular}\label{tab:tabcorrotte9x90.02}%
+        \end{tabular}\label{tab:tabcorrotte9x90.02}%
         }
-        
-        \end{minipage}%
+    \end{minipage}%
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 28.75660830135966        \\
             Media MSE            & 0.0013622992560759118      \\
             Dev. Std. PSNR       & 0.9328668712951993       \\
@@ -499,7 +494,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 9 & 1.3 & 0.04 & 25.1912 &  0.00302606 \\   
                 pugile.png & 9 & 1.3 & 0.04 & 26.7366 & 0.00212 \\
                 img1.png & 9 & 1.3 & 0.04 & 25.4375 & 0.00285925 \\
@@ -517,9 +512,9 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 25.935031436703177       \\
             Media MSE            & 0.0025660139420201973     \\
             Dev. Std. PSNR       & 0.4896546967680673        \\
@@ -544,7 +539,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 9 & 1.3 & 0.08 & 21.0692 & 0.00781774 \\    
                 pugile.png & 9 & 1.3 & 0.08 & 21.6072 & 0.0069068\\
                 img1.png & 9 & 1.3 & 0.08 & 21.1615 & 0.0076534 \\
@@ -562,9 +557,9 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 21.32346241378315          \\
             Media MSE            & 0.007378763783377743        \\
             Dev. Std. PSNR       & 0.169144238763136          \\
@@ -588,7 +583,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 9 & 1.3 & 0.16 & 15.6736 & 0.0270796 \\  
                 pugile.png & 9 & 1.3 & 0.16 & 15.8334 & 0.0261013\\
                 img1.png & 9 & 1.3 & 0.16 & 15.7044 & 0.026888 \\
@@ -606,9 +601,9 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 15.752586448516155       \\
             Media MSE            & 0.026593095526593946      \\
             Dev. Std. PSNR       & 0.04888788575026526        \\
@@ -634,7 +629,7 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
         \resizebox{1\textwidth}{!}{%
         \begin{tabular}{|l c c c c r|}
             \hline
-            \multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{1}{|c}{\textbf{Nome Img}} & \multicolumn{1}{|c}{\textbf{DimKer}} & \multicolumn{1}{|c}{\textbf{Sigma}} & \multicolumn{1}{|c}{\textbf{Noise Dev}} & \multicolumn{1}{|c}{\textbf{PSNR}} & \multicolumn{1}{|c|}{\textbf{MSE}} \\ \hline
                 data.camera() & 9 & 1.3 & 0.32 & 9.82272 & 0.104167 \\   
                 pugile.png & 9 & 1.3 & 0.32 & 9.88385 & 0.10271 \\
                 img1.png & 9 & 1.3 & 0.32 & 9.85454 & 0.103406 \\
@@ -652,9 +647,9 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Medie calcolate}} \\ \hline
             Media PSNR           & 9.842576581447004           \\
             Media MSE            & 0.10369173965451903     \\
             Dev. Std. PSNR       & 0.012567871393636715        \\
@@ -671,31 +666,37 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \centering
     \begin{minipage}[h]{\textwidth}
         \centering
-        \includegraphics[width=\linewidth]{output/tabCorrotte/imgcorr0.png}\label{fig:imgcorrotteGEN}
+        \includegraphics[width=\linewidth]{output/tabCorrotte/imgcorr11.png}\label{fig:imgcorrotteGEN}
     \end{minipage}
     \begin{minipage}[h]{0.4\textwidth}
         \centering
         \resizebox{0.9\textwidth}{!}{%
-        \begin{tabular}{|lr|}
+        \begin{tabular}{|l r|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Istanza del Problema}} \\ \hline
-            Media PSNR           & 28.711752431711446          \\
-            Media MSE            & 0.00136419069257633       \\
-            Dev. Std. PSNR       & 0.7204441561553295          \\
-            Dev. Std. MSE        & 0.00023032931081567697       \\ \hline
+            \rowcolor{lightbblue}\multicolumn{2}{|c|}{\textbf{Istanza del Problema}} \\ \hline
+            Media PSNR           & 28.75660830135966        \\
+            Media MSE            & 0.0013622992560759118      \\
+            Dev. Std. PSNR       & 0.9328668712951993       \\
+            Dev. Std. MSE        & 0.0002893379298389771   \\ \hline
             \end{tabular}
         }
     \end{minipage}
     \captionlistentry[table]{Table corrotte}
     \captionsetup{labelformat=andtable}
-    \caption{Immagini corrotte con noise = 0.02}
+    \caption{Immagini corrotte con noise = 0.02, $\sigma = 1.3$ dimensione $9 \times 9$}
 \end{figure}
-Notiamo che tutte le immagini all'aumentare del valore della deviazione standard peggiorano 
-qualitativamente, con $\sigma = 0.5$ e deviazione standard 0.02 abbiamo per esempio un PSNR in 
-media vicino al 30. Invece aumentando la deviazione standard a 0.32 scende addirittura attorno al 9 con delle 
-immagini che tendono a risultare molto sfocate e 'disturbate' dal rumore guassiano. 
-All'aumentare delle dimensioni di Kernel a $\sigma = 1$ di dimensioni $7 \times 7$ notiamo che partendo 
-da una dev. standard 0.02 abbiamo un PSNR in media leggermente inferiore rispetto alla precedente dimensione 
-del Kernel.
-La cosa si ripete quando si passa a $\sigma = 1.3$: i valori di PSNR delle rispettive immagini decrescono 
-rispetto ai valori ottenuti dalle precedenti dimensioni del Kernel.
+
+Notiamo che tutte le immagini all'aumentare del valore rumore "\verb|noise|" peggiorano 
+qualitativamente: 
+con $\sigma = 0.5$ e noise 0.02 abbiamo per esempio un valore medio del PSNR in 
+media vicino a 30, invece aumentando il noise a 0.32 scende addirittura attorno a 9, con 
+immagini che tendono a risultare molto sfocate e disturbate dal rumore guassiano. 
+Inoltre quando il rumore è alto, le deviazioni standard tendono a diminuire: 
+infatti i valori di PSNR e MSE sono pressocchè uguali, quasi come se fossero livellati. 
+
+All'aumentare delle dimensioni del Kernel ($\sigma = 1$ e dimensioni $7 \times 7$) notiamo che partendo 
+da un rumore pari a 0.02 abbiamo un PSNR in media leggermente inferiore rispetto alla precedente 
+dimensione del Kernel.
+La cosa si ripete quando si passa a $\sigma = 1.3$.
+I valori di PSNR delle rispettive immagini decrescono 
+rispetto ai valori ottenuti dalle precedenti dimensioni del Kernel con lo stesso valore noise fissato.

@@ -1,53 +1,61 @@
-\subsection{Metodo del Gradiente}
-Il metodo del gradiente è un algoritmo che calcola il vettore di minimo globale, ovvero:
-Un vettore $x^{\ast}$ è un punto di minimo globale di $f(x)$ se $f(x^{\ast}) \leq f(x) \forall x \in R^n$.
+{\color{oorange}\subsection{Metodo del Gradiente implementato con ricerca in linea inesatta (backtracking)}}
+Il metodo del gradiente è un algoritmo che cerca di trovare l'argomento del minimo globale, ovvero:
+un vettore $x^{\ast}$ è un punto di minimo globale di $f(x)$ se $f(x^{\ast}) \leq f(x) \forall x \in R^n$.
 
 Analogamente, un vettore $x^{\ast}$ è un punto di minimo globale in senso stretto di $f(x)$ 
 se $f(x^{\ast}) < f(x) \forall x \in R+n \and x \neq x^{\ast}$.
+
+In termini molto generali si può dire che la ricerca in linea esatta è finalizzata essenzialmente, ad assicurare 
+la convergenza globale dell'algoritmo, mentre la rapidità di convergenza dipende in prevalenza dalla direzione 
+di ricerca. 
+
+Tuttavia, un valore di $a_k$ poco appropriato può distruggere le proprietà di rapidità di convergenza associate 
+alla scelta di $p_k$.
+
+Per questi motivi, anzichè fissare fin dall'inizio $\alpha$, ad ogni iterazione calcoliamo il passo più opportuno 
+(ricerca in linea inesatta).
 
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.9\textwidth}
         \centering
-    \includegraphics[width=0.7\textwidth]{imgRel/datasetgradiente.png}\label{fig:geomgradiente}
-    \caption{Immagini geometriche ripristinate}
+    \includegraphics[width=0.9\textwidth]{imgRel/datasetgradiente.png}\label{fig:geomgradiente}
+    \caption{Immagini geometriche ripristinate con il metodo del gradiente}
     \end{subfigure}
 
     \begin{subfigure}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.6\linewidth]{imgRel/fotogrmg.png}
-        \caption{Immagine fotografica ripristinata}
+        \includegraphics[width=0.6\textwidth]{imgRel/fotogrmg.png}
+        \caption{Immagine ritratto ripristinata con il metodo del gradiente}
         \label{fig: pugilemg1}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}\centering
-        \includegraphics[width=0.6\linewidth]{imgRel/giornalemg.png}
-        \caption{Immagine con testo ripristinata}
+        \includegraphics[width=0.6\textwidth]{MANCANTI/cameramanPuntoDueGrad.png}
+        \caption{Immagine fotografica ripristinata con il metodo del gradiente}
     \end{subfigure}
 \caption{Immagini analizzate ripristinate con il Metodo del Gradiente}
+    \begin{minipage}{0.6\textwidth}\centering
+        \begin{tabular}{|lcr|}
+            \hline
+            \rowcolor{orange}
+            \multicolumn{1}{|c|}{\textbf{Immagine}} & \multicolumn{1}{l|}{\textbf{PSNR corrotte}} & \multicolumn{1}{c|}{\textbf{PSNR riprist.}} \\ \hline
+            img1.png                                & 27.7886                                     & 28.217                                      \\
+            img2.png                                & 29.2539                                     & 29.204                                      \\
+            img3.png                                & 28.0014                                     & 28.525                                      \\
+            img4.png                                & 29.6382                                     & 29.495                                      \\
+            img5.png                                & 29.4566                                     & 29.362                                      \\
+            img6.png                                & 29.1727                                     & 29.178                                      \\
+            img7.png                                & 28.8132                                     & 28.949                                      \\
+            img8.png                                & 27.7142                                     & 28.218                                      \\ \hline
+            pugile.png                              & 30.3576                                     & 30.334                                      \\
+            data.camera()                           & 27.4138                                     & 27.540                                      \\ \hline
+            \end{tabular}
+        \captionof{table}{Valori PSNR delle immagini ricostruite con il metodo del gradiente}      
+    \end{minipage}
 \end{figure}
- 
-\begin{algorithm}[H]
-	\caption{Metodo del Gradiente in \code{pseudocode}}\label{alg:mg}
-	\begin{algorithmic}[1]
-		\State $x_0 \in R^n, k=0$
-        \While{$\nabla f(x_k) \neq 0$ and $k <$ maxit}\Comment{maxit è il massimo di iterazioni}
-            \State calcolare la direzione di discesa $d_k$
-            \State calcolare il passo di discesa $\alpha_k$
-            \State $x_{k+1} = x_k+\alpha_kd_k$
-            \State $k = k+1$
-        \EndWhile
-	\end{algorithmic}
-\end{algorithm}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{imgCode/metGrad.png}
     \caption{Codice in \code{Python 3} del metodo del gradiente applicato ad una singola immagine}
 \end{figure}
-
-Notiamo anche qui che l'immagine ripristinata ha un PSNR molto piú alto rispetto all'immagine corrotta. 
-Questo risulta in un'immagine con una qualità corretta e simile all'immgine originale.
-
-Per esempio considerando l'immagine fotografica avremo che:\\
-\textbf{Immagine ripristinata \ref{fig: pugilemg1}} PSNR: 30.334085\\
-\textbf{Immagine corrotta \ref{fig:fotogrCorrotte7x7}} PSNR: 30.9049\\

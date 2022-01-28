@@ -1,11 +1,12 @@
-\subsection{Metodo di Regolarizzazione con Metodo del Gradiente \code{minimize}}
-Vediamo che al crescere del $\lambda$, il PSNR fino a $\$ lambda \simeq 0.02$ continua ad aumentare, 
-quindi migliorando l'immagine, raggiunge un picco massimo e successivamente decresce.
+{\color{ggreen}\subsection{Regolarizzazione del Metodo del Gradiente Coniugato \code{minimize}}}
+In linea generale vediamo che al crescere dei $\lambda$, il PSNR fino a $\lambda \simeq 0.02$ 
+continua ad aumentare, 
+quindi migliora l'immagine, raggiunge un picco massimo e successivamente decresce.
+Quindi deduciamo che tramite la regolarizzazione si ottiene una soluzione o un PSNR migliore, ma non per 
+qualsiasi valore di $\lambda$. 
 
-\subsubsection{Immagini geometriche regolarizzate}
-Analizziamo i grafici ottenuti cercando di ridurre il rumore nella ricostruzione delle immagini del dataset. 
-
-Grafici andamento PSNR, media PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione
+{\color{ggreen}\subsubsection{Immagini geometriche regolarizzate}}
+Grafici andamento PSNR, media PSNR e MSE nella ricostruzione delle immagini con il metodo di regolarizzazione:
 
 \begin{figure}[H]
     \centering
@@ -86,7 +87,7 @@ Grafici andamento PSNR, media PSNR e MSE nella ricostruzione delle immagini con 
     \caption{Ricostruzione immagine geometrica img8.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
 \end{figure}
 
-\subsubsection{Immagini fotografiche regolarizzate}
+{\color{ggreen}\subsubsection{Immagini fotografiche regolarizzate}}
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.5\textwidth}
@@ -107,14 +108,4 @@ Grafici andamento PSNR, media PSNR e MSE nella ricostruzione delle immagini con 
         \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzionePugile_minimize.png}
     \end{subfigure}
     \caption{Ricostruzione immagine fotografica pugile.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
-    
-    \centering
-    \begin{subfigure}{0.5\textwidth}
-        \includegraphics[width=\textwidth]{imgRicostruzione/graficoGiornale_minimize.png}
-    \end{subfigure}%
-    \begin{subfigure}{0.5\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzioneGiornale_minimize.png}
-    \end{subfigure}
-    \caption{Ricostruzione immagine fotografica giornale.png [a destra: immagine corrotta, sinistra: miglior immagine ottenuta con regolarizzazione]}
 \end{figure}

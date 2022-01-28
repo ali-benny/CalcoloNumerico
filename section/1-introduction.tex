@@ -1,12 +1,9 @@
-Il progetto ha come scopo quello di comprendere e mettere in atto metodi per ricostruire 
-immagini blurrate e svolgere il lavoro opposto, quindi generare immagini corrotte dal rumore 
-a partire da un immagine originale. 
+L'obiettivo del progetto è comprendere e mettere in atto metodi per la ricostruizione, o recupero, di 
+immagini blurrate, lavorando su problemi test, ovvero abbiamo generato corrotte da un rumore 
+Gaussiano applicandolo ad un set di immagini pulite in modo tale da analizzare il problema. 
 
-Il problema che ci è stato presentato riguarda la ricostruzione di 
-immagini corrotte attraverso il blur Gaussiano.
-
-Verrà analizzata inizialmente l'immagine \code{data.camera()} importata da
-\code{skimage}, successivamente verranno analizzate un set di 8 immagini con oggetti geometrici
+Inizialmente verrà analizzata l'immagine \code{data.camera()} importata da
+\code{skimage}, successivamente verranno analizzate 8 immagini con oggetti geometrici
  di colore uniforme su sfondo nero, realizzate da noi.
 
 Il problema di deblur consiste nella ricostruzione di un immagine a partire da un dato acquisito
@@ -14,7 +11,7 @@ Il problema di deblur consiste nella ricostruzione di un immagine a partire da u
 \[b=Ax+\eta\]
 dove $b$ rappresenta l'immagine corrotta, $x$ l'immagine originale che vogliamo ricostruire, $A$ 
 l'operatore che applica il blur Gaussiano ed $\eta$ il rumore additivo con distribuzione Gaussiana di
- media $\mathbb{0}$ e deviazione standard $\sigma$.
+ media 0 e deviazione standard $\sigma$.
 
 Per svolgere il progetto si farà uso dei moduli \code{numpy}, \code{skimage} e \code{matplotlib}
 utilizzando il linguaggio Python.
@@ -28,8 +25,14 @@ originale, la formula per calcolarlo è la seguente: \[PSNR = log_{10}(\frac{max
 \textbf{MSE (Mean Squared Error):}  Con la sigla ci riferiamo all'errore quadratico medio ed è così ottenuto:
  \[MSE = \sqrt[2]{\frac{\sum_{i=1}^n\sum_{j=1}(x^{\ast}_{ij}-x_{ij})}{nm}}\]
 
-I due valori sono inversamente proposizionali, quindi più è alto il PSNR e basso l'MSE, più l'immagine sarà 
+I due valori sono inversamente proposizionali; più è alto il PSNR e basso l'MSE, più l'immagine sarà 
 simile all'immagine originale. il PSNR dipende dall'MSE.
 
-\textbf{Deviazione standard:} E' un indice che ci permette di capire in maniera riassuntiva le differenze dei 
-valori per ogni osservazioni rispetto alla media delle variabili. 
+\textbf{Deviazione standard:} indica quanto sono distribuiti i dati rispetto alla loro media: 
+un valore piccolo indica che i dati sono "ammassati" intorno al valore medio, 
+mentre un valore grande indica che i dati sono distribuiti lungo tutto il grafico.
+
+\begin{figure}[H]\centering
+	\includegraphics[width=0.3\textwidth]{MANCANTI/deviazione standard.jpg}
+	\caption{Distrubuzione valori rispetto ad un valore medio}
+\end{figure}

@@ -1,5 +1,10 @@
-\section{Ricostruzione di un immagine rispetto una versione corrotta}
-Una possibile ricostruzione dell'immagine originale $x$ partendo dall'immagine corrotta $b$ è la soluzione naive data dal minimo del seguente problema di ottimizzazione:
+{\color{oorange}\section{Ricostruzione di un immagine rispetto una versione corrotta}}
+\textcolor{oorange}{\rule[5pt]{\textwidth}{1pt}}
+Una possibile ricostruzione dell'immagine originale $x$ partendo dall'immagine corrotta $b$ è la soluzione naive 
+data dal minimo del seguente problema di ottimizzazione:
 \[x^* = \arg\min_x \frac{1}{2} ||Ax - b||_2^2\]
 
-Nell'analisi delle immagini ricostruite useremo $\sigma=1$ dimensione $7\times 7$ come valore standard.
+Da ora in poi, come istanza del problema durante l'analisi ci baseremo sulle ricostruzioni di
+ quelle immagini con parametri
+$\sigma = 1.3$ dimensione $9\times 9$ \verb|noise| = 0.02.
+

@@ -1,11 +1,12 @@
-\subsection{Osservazioni}
-Osserviamo il risultato su un'immagine scelta casualmente del set creato e sulle due immagini aggiuntive.
-%! l'elemento principale e' il rumore + mettere confronti
+{\color{bblue}\subsection{Osservazioni}}
+Osserviamo i risultati ottenuti su un'immagine scelta casualmente del set creato e sulle due immagini 
+ fotografiche aggiunte.
 
-Ricordiamo che più è alto il valore del PSNR maggiore sarà la vicinanza dell'immagine corrotta rispetto alla versione originale. 
+Ricordiamo che più è alto il valore del PSNR maggiore sarà la vicinanza dell'immagine corrotta 
+all'immagine originale. 
 
-\subsubsection{Analisi immagine geometrica}
-Analizziamo l'immagine img8.png al variare del valore $\sigma$ con Dev.Std = 0.05:
+{\color{bblue}\subsubsection{Analisi immagine geometrica}}
+Analizziamo l'immagine img8.png al variare del valore $\sigma$ con \verb|noise| = 0.05:
 
 \begin{figure}[H]
     \centering
@@ -32,12 +33,12 @@ Analizziamo l'immagine img8.png al variare del valore $\sigma$ con Dev.Std = 0.0
 \end{figure}
 Le figure di sinistra rappresentano l'immagine originale, invece a destra sono riportate le immagini corrotte 
 con i rispettivi valori di PSNR e MSE. 
-Notiamo che all'aumentare delle dimensioni di sigma il valore di PSNR diminuisce che denota un peggioramento 
-della qualità dell'immagine, infatti le immagini subiscono un'appiattimento dell'intensità della scala dei 
+Notiamo che all'aumentare delle dimensioni di sigma il valore di PSNR diminuisce: ciò denota un peggioramento 
+della qualità dell'immagine. Infatti le immagini subiscono un affievolimento dell'intensità della scala dei 
 colori e i contorni delle varie figure geometriche perdono di fermezza. 
 
-\subsubsection{Analisi immagini fotografiche}
-Analizziamo le immagini fotografiche al variare del valore $\sigma$ con Dev.Std 0.05:
+{\color{bblue}\subsubsection{Analisi immagini fotografiche}}
+Analizziamo le immagini fotografiche al variare del valore $\sigma$ con \verb|noise| 0.05:
 \begin{figure}[H]
     \centering
     \begin{subfigure}{0.67\textwidth}
@@ -58,10 +59,11 @@ Analizziamo le immagini fotografiche al variare del valore $\sigma$ con Dev.Std 
         \caption{immagini corrotte con $\sigma = 1.3$ dimensione $9 \times 9$}
         \label{fig:fotogrCorrotte9x9}
     \end{subfigure}
-    \caption{Immagine fotografica corrotta al variare di $\sigma$}
+    \caption{Immagini fotografiche corrotte al variare di $\sigma$}
     \label{fig:fotogrCorrotte}
 \end{figure}
 
 Si nota un'altra volta che all'aumentare delle dimensioni di $\sigma$ diminuisce il PSNR e l'immagine perde di 
-incisività, le versioni corrotte benché risultino visivamente peggiori, si riesce ancora a ben distinguere il 
+incisività (nitidezza).
+In ogni caso nelle versioni corrotte, benché risultino visivamente peggiori, si riesce ancora a ben distinguere il 
 soggetto in primo piano, anche se sfocato, in tutte le immagini. 

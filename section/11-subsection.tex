@@ -1,25 +1,32 @@
-E' richiesto un set di immagini con le seguenti specifiche: 
+{\color{bblue}\subsection{Generazione dataset}}
+É richiesto un set di immagini con le seguenti specifiche: 
 \begin{itemize}
     \item 8 Immagini di dimensione $512 \times 512$;
     \item Formato PNG in scala di grigi;
     \item Devono contenere tra i 2 ed i 6 oggetti geometrici;
     \item Oggetti di colore uniforme su uno sfondo nero.
 \end{itemize}
-\begin{figure}[h]
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{./imgRel/dataset.png}\label{fig:datasetgeometriche}
-    \caption{Immagini geometriche utilizzate}
+    \caption{Immagini geometriche studiate}
 \end{figure}
-Useremo anche altre due immagini di tipo fotografico/medico/astronomico a scelta trovate su internet.
-Quest'ultime saranno importate all'interno del progetto con la libreria \code{skimage}, impostando il flag \verb|as_gray=True| per averle in bianco e nero.
+
+Inoltre useremo immagini "fotografiche" con dimensione $512 \times 512$, le quali verranno mostrate usando la flag 
+\verb|as_gray=True| per 
+poterle visualizzare in bianco e nero.
 
 Le immagini selezionate sono le seguenti:
 \begin{description}
-    \item[Immagine Fotografica] Mostra un fotografo nell'intento di uno scatto con sfondo paesaggistico.
-    \item[Immagine Ritratto] Ritrae il volto di una persona in modo dettagliato e con varie tonalità di grigio.
+    \item[Immagine Fotografica] Inquadra un fotografo nell'intento di uno scatto con sfondo 
+    paesaggistico. (Importate all'interno del progetto con la libreria \code{skimage})
+    \item[Immagine Ritratto] Ritrae il volto di una persona in modo dettagliato e con 
+    varie tonalità di grigio. É necessario caricare l'immagine nel progetto con il comando \verb|??|
+    per importarla all'interno del progetto e poterla analizzare.
 \end{description}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{subfigure}{0.5\textwidth}
         \centering
