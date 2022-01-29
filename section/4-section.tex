@@ -12,61 +12,73 @@ I risultati sono due immagini della stessa dimensione dell'immagine in input, un
 \[x^* = \arg\min_x \frac{1}{2} ||Ax - b||_2^2 + \lambda TV(u)\] 
 il cui gradiente $\nabla f$ è dato da: 
 \[\nabla f(x) = (A^TAx - A^Tb)  + \lambda \nabla TV(x)\]
-
+\newpage
 {\color{rred}\subsection{Variazione totale delle immagini geometriche:}}
 {\color{rred}\subsubsection{Immagine geometrica img2.png}}
-\begin{figure}[H]{}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico2TOTVAR_riserva.png}%
-    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/proseguimentoGraficoTOTVAR2.png}
-    \includegraphics[width=0.8\textwidth]{IMMAGINI_RELAZIONE/ricostruzione2TOTVAR.png}
+    \begin{subfigure}{0.8\textwidth}
+    \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/grafico2TOTVAR_riserva.png}
+    \end{subfigure}
+    \begin{subfigure}{0.8\textwidth}
+        \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/proseguimentoGraficoTOTVAR2.png}
+        \caption{Proseguimento oscillante dei valori PSNR con regolarizzazione TOT VAR i quali però, per lambda che tende a infinito, tendono a 0}
+    \end{subfigure}
+    \includegraphics[width=0.81\textwidth]{IMMAGINI_RELAZIONE/ricostruzione2TOTVAR.png}
     \caption{Immagine Corrotta, Immagine Ricostruita}
 \end{figure}
-
+\newpage
 {\color{rred}\subsubsection{Immagine geometrica img4.png}}
-\begin{figure}[H]{}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico4TOTVAR_riserva.png}%
-    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/proseguimentoGraficoTOTVAR4.png}
-    \includegraphics[width=0.8\textwidth]{IMMAGINI_RELAZIONE/ricostruzione4TOTVAR.png}
+    \begin{subfigure}{0.8\textwidth}
+    \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/grafico4TOTVAR_riserva.png}
+    \end{subfigure}
+    \begin{subfigure}{0.8\textwidth}
+        \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/proseguimentoGraficoTOTVAR4.png}
+        \caption{Proseguimento oscillante dei valori PSNR con regolarizzazione TOT VAR i quali però, per lambda che tende a infinito, tendono a 0}
+    \end{subfigure}
+    \includegraphics[width=0.81\textwidth]{IMMAGINI_RELAZIONE/ricostruzione4TOTVAR.png}
     \caption{Immagine Corrotta, Immagine Ricostruita}
 \end{figure}
-
+\newpage
 {\color{rred}\subsubsection{Immagine geometrica img6.png}}
-\begin{figure}[H]{}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico6TOTVAR_riserva.png}%
-    \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/proseguimentoGraficoTOTVAR6.png}
-    \includegraphics[width=0.8\textwidth]{IMMAGINI_RELAZIONE/ricostruzione6TOTVAR.png}
+    \begin{subfigure}{0.8\textwidth}
+    \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/grafico6TOTVAR_riserva.png}
+    \end{subfigure}
+    \begin{subfigure}{0.8\textwidth}
+        \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/proseguimentoGraficoTOTVAR6.png}
+        \caption{Proseguimento oscillante dei valori PSNR con regolarizzazione TOT VAR i quali però, per lambda che tende a infinito, tendono a 0}
+    \end{subfigure}
+    \includegraphics[width=0.81\textwidth]{IMMAGINI_RELAZIONE/ricostruzione6TOTVAR.png}
     \caption{Immagine Corrotta, Immagine Ricostruita}
 \end{figure}
-
-
+\newpage
 {\color{rred}\subsection{Variazione totale dell'immagine ritratto:}}
-\begin{figure}[H]{}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{IMMAGINI_RELAZIONE/graficoPugileTOTVAR_ERRREL&MSE.png}
-    \includegraphics[width=0.8\textwidth]{IMMAGINI_RELAZIONE/graficoPugileTOTVAR_PSNR&suaMedia.png}
-    \includegraphics[width=0.8\textwidth]{imgRicostruzione/ricostruzionePugile_TOTVAR_maxPSNR33.70.png}
+    \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/graficoPugileTOTVAR_ERRREL&MSE.png}
+    \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/graficoPugileTOTVAR_PSNR&suaMedia.png}
+    \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzionePugile_TOTVAR_maxPSNR33.70.png}
     \caption{Immagine Originale, Immagine Corrotta, Immagine Ricostruita}
 \end{figure}
-
-
+\newpage
 {\color{rred}\subsection{Variazione totale dell'immagine con testo:}}
-\begin{figure}[H]{}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{IMMAGINI_RELAZIONE/graficoGiornaleTOTVAR_ERRREL&MSE.png}
-    \includegraphics[width=0.8\textwidth]{IMMAGINI_RELAZIONE/graficoGiornaleTOTVAR_PSNR&suaMedia.png}
-    \includegraphics[width=0.8\textwidth]{imgRicostruzione/ricostruzioneGiornale_TOTVAR_maxPSNR23.20.png}
+    \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/graficoGiornaleTOTVAR_ERRREL&MSE.png}
+    \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/graficoGiornaleTOTVAR_PSNR&suaMedia.png}
+    \includegraphics[width=\textwidth]{imgRicostruzione/ricostruzioneGiornale_TOTVAR_maxPSNR23.20.png}
     \caption{Immagine Originale, Immagine Corrotta, Immagine Ricostruita}
 \end{figure}
-
-
+\newpage
 {\color{rred}\subsection{Variazione totale dell'immagine con testo e immagini:}}
-\begin{figure}[H]{}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{IMMAGINI_RELAZIONE/graficoAlbumTOTVAR_ERRREL&MSE.png}
-    \includegraphics[width=0.8\textwidth]{IMMAGINI_RELAZIONE/graficoAlbumTOTVAR_PSNR&suaMedia.png}
-    \includegraphics[width=0.8\textwidth]{IMMAGINI_RELAZIONE/eventuale_ricostruzioneTOTVAR_Album_33.71.png}
+    \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/graficoAlbumTOTVAR_PSNR&suaMedia.png}
+    \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/graficoAlbumTOTVAR_ERRREL&MSE.png}
+    \includegraphics[width=\textwidth]{IMMAGINI_RELAZIONE/eventuale_ricostruzioneTOTVAR_Album_33.71.png}
     \caption{Immagine Originale, Immagine Corrotta, Immagine Ricostruita}
 \end{figure}

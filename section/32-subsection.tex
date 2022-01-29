@@ -1,15 +1,15 @@
 {\color{ggreen}\subsection{Metodo di Regolarizzazione di Tikhonov}}
-Per ridurre gli effetti del rumore nella ricostruzione è necessario introdurre un termine di regolarizzazione di Tikhonov. 
+Per ridurre gli effetti del rumore nella ricostruzione si può aggiungere al problema precendente un 
+termine di regolarizzazione di Tikhonov. 
 
 Si considera quindi il seguente problema di ottimizzazione:
 
-Si deve risolvere $Ax_\epsilon = b_\epsilon$ con $b_\epsilon = b+\epsilon$. 
 Al posto di risolvere direttamente il sistema lineare (se il sistema è quadrato) o di minimizzare la norma 2 del residuo 
 $||Ax_\epsilon -b_\epsilon||_2^2$ (se il sistema è rettangolare), 
 
-si aggiunge un vincolo di regolarità alla soluzione e si minimizza, ad esempio 
-\[||Ax_\epsilon-b_\epsilon||_2^2+\gamma_\epsilon||x_\epsilon||_2^2\] che rappresenta la \textbf{forma standard} 
-della regolarizzazione di Tikhonov.
+si aggiunge un termine "rilassatore" al problema naive precedente e lo si minimizza, ad esempio 
+\[||Ax_\epsilon-b_\epsilon||_2^2+\gamma_\epsilon||x_\epsilon||_2^2\] 
+{\centering $Ax_\epsilon = b_\epsilon$ con $b_\epsilon = b+\epsilon$}
 
 \begin{figure}[H]
     \includegraphics[width=0.5\textwidth]{IMMAGINI_RELAZIONE/grafico1Tik.png}

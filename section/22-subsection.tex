@@ -3,9 +3,9 @@ Il metodo del gradiente è un algoritmo che cerca di trovare l'argomento del min
 un vettore $x^{\ast}$ è un punto di minimo globale di $f(x)$ se $f(x^{\ast}) \leq f(x) \forall x \in R^n$.
 
 Analogamente, un vettore $x^{\ast}$ è un punto di minimo globale in senso stretto di $f(x)$ 
-se $f(x^{\ast}) < f(x) \forall x \in R+n \and x \neq x^{\ast}$.
+se $f(x^{\ast}) < f(x) \: \forall x \in R^{\frac{n}{x\ast}}$.
 
-In termini molto generali si può dire che la ricerca in linea esatta è finalizzata essenzialmente, ad assicurare 
+In termini molto generali si può dire che la ricerca in linea esatta è impiegata essenzialmente ad assicurare 
 la convergenza globale dell'algoritmo, mentre la rapidità di convergenza dipende in prevalenza dalla direzione 
 di ricerca. 
 
@@ -34,6 +34,10 @@ Per questi motivi, anzichè fissare fin dall'inizio $\alpha$, ad ogni iterazione
         \caption{Immagine fotografica ripristinata con il metodo del gradiente}
     \end{subfigure}
 \caption{Immagini analizzate ripristinate con il Metodo del Gradiente}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
     \begin{minipage}{0.6\textwidth}\centering
         \begin{tabular}{|lcr|}
             \hline
@@ -52,9 +56,7 @@ Per questi motivi, anzichè fissare fin dall'inizio $\alpha$, ad ogni iterazione
             \end{tabular}
         \captionof{table}{Valori PSNR delle immagini ricostruite con il metodo del gradiente}      
     \end{minipage}
-\end{figure}
 
-\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{imgCode/metGrad.png}
     \caption{Codice in \code{Python 3} del metodo del gradiente applicato ad una singola immagine}
