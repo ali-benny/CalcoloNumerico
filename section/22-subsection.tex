@@ -3,7 +3,7 @@ Il metodo del gradiente è un algoritmo che cerca di trovare l'argomento del min
 un vettore $x^{\ast}$ è un punto di minimo globale di $f(x)$ se $f(x^{\ast}) \leq f(x) \forall x \in R^n$.
 
 Analogamente, un vettore $x^{\ast}$ è un punto di minimo globale in senso stretto di $f(x)$ 
-se $f(x^{\ast}) < f(x) \: \forall x \in R^{\frac{n}{x\ast}}$.
+se $f(x^{\ast}) < f(x) \: \forall x \in \mathbb{R}^n - \{x^{\ast}\}$.
 
 In termini molto generali si può dire che la ricerca in linea esatta è impiegata essenzialmente ad assicurare 
 la convergenza globale dell'algoritmo, mentre la rapidità di convergenza dipende in prevalenza dalla direzione 
@@ -61,3 +61,7 @@ Per questi motivi, anzichè fissare fin dall'inizio $\alpha$, ad ogni iterazione
     \includegraphics[width=0.7\textwidth]{imgCode/metGrad.png}
     \caption{Codice in \code{Python 3} del metodo del gradiente applicato ad una singola immagine}
 \end{figure}
+
+{\color{oorange}\subsubsection{Risultati della soluzione naive}}
+Nella soluzione naive notiamo che con entrambi i metodi otteniamo ricostruzioni con PSNR leggermente 
+superiori (e in alcuni casi addirittura di poco inferiori) rispetto ai PSNR delle immagini corrotte iniziali.

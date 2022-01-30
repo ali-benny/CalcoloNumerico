@@ -6,7 +6,7 @@ Inizialmente verrà analizzata l'immagine \code{data.camera()} importata da
 \code{skimage}, successivamente verranno analizzate 8 immagini con oggetti geometrici
  di colore uniforme su sfondo nero, realizzate da noi.
 
-Il problema di deblur consiste nella ricostruzione di un immagine a partire da un dato acquisito
+Il problema di deblur consiste nella ricostruzione di un'immagine a partire da un dato acquisito
  mediante il seguente modello:
 \[b=Ax+\eta\]
 dove $b$ rappresenta l'immagine corrotta, $x$ l'immagine originale che vogliamo ricostruire, $A$ 
@@ -19,7 +19,7 @@ utilizzando il linguaggio Python.
 Affinché risultino chiari i valori a cui andremo a riferirci nella relazione, bisogna tenere ben presente 
 il significato di questi tre parametri. 
 
-\textbf{PSNR (Peak Signal to Noise Ratio):} Misura la qualità di un immagine ricostruita rispetto all'immagine 
+\textbf{PSNR (Peak Signal to Noise Ratio):} Misura la qualità di un'immagine ricostruita rispetto all'immagine 
 originale, la formula per calcolarlo è la seguente: \[PSNR = log_{10}(\frac{max\;x^\ast}{\sqrt{MSE}})\]
 
 \textbf{MSE (Mean Squared Error):}  Con la sigla ci riferiamo all'errore quadratico medio ed è così ottenuto:

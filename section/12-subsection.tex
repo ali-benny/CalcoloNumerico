@@ -6,7 +6,7 @@ Degradare le immagini applicando, mediante le funzioni fornite, l'operatore di b
     \item{$\sigma=1$ dimensione $7\times 7$}
     \item{$\sigma=1.3$ dimensione $9\times 9$}
 \end{itemize}
-ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
+ed aggiungendo rumore gaussiano con diversi valori che spaziano nell'intervallo $(0, 0.5]$.
 
 \begin{figure}[H]
     \centering
@@ -527,7 +527,6 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \caption{Immagini corrotte con $\sigma = 1.3$ dimensione $9 \times 9$ e noise = 0.04}
 \end{figure}
 
-
 \begin{figure}[H]
     \centering
     \begin{minipage}[h]{\textwidth}
@@ -616,8 +615,6 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
     \caption{Immagini corrotte con $\sigma = 1.3$ dimensione $9 \times 9$ e noise = 0.16}
 \end{figure}
 
-
-
 \begin{figure}[H]
     \centering
     \begin{minipage}[h]{\textwidth}
@@ -688,14 +685,14 @@ ed aggiungere rumore gaussiano con diversi valori di deviazione standard.
 
 Notiamo che tutte le immagini all'aumentare del valore rumore "\verb|noise|" peggiorano 
 qualitativamente: 
-con $\sigma = 0.5$ e noise 0.02 abbiamo per esempio un valore medio del PSNR in 
-media vicino a 30, invece aumentando il noise a 0.32 scende addirittura attorno a 9, con 
+con $\sigma = 0.5$ e noise 0.02 abbiamo per esempio un valore medio del PSNR 
+vicino a 30, invece aumentando il noise a 0.32 scende addirittura attorno a 9, con 
 immagini che tendono a risultare molto sfocate e disturbate dal rumore guassiano. 
 Inoltre quando il rumore è alto, le deviazioni standard tendono a diminuire: 
 infatti i valori di PSNR e MSE sono pressocchè uguali tra di loro, quasi come se fossero stati pareggiati (o livellati). 
 
-All'aumentare delle dimensioni del Kernel ($\sigma = 1$ e dimensioni $7 \times 7$) notiamo che partendo 
-da un rumore pari a 0.02 abbiamo un PSNR in media leggermente inferiore rispetto alla precedente 
+All'aumentare delle dimensioni del Kernel ($\sigma = 1$ e dimensioni $7 \times 7$) notiamo che fissato 
+da un rumore pari a 0.02, abbiamo un PSNR in media leggermente inferiore rispetto alla precedente 
 dimensione del Kernel.
 La cosa si ripete quando si passa a $\sigma = 1.3$.
 I valori di PSNR delle rispettive immagini decrescono 

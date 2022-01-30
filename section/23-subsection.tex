@@ -10,7 +10,7 @@
             \State $x_{k+1} = x_k+\alpha_kd_k$
             \State $k = k+1$
         \EndWhile
-        \State \Return $x_last$
+        \State \Return $x_{last}$
 	\end{algorithmic}
 \end{algorithm}
 
@@ -47,7 +47,7 @@ Per questo motivo, considerando
 che i metodi di discesa sono definiti dall’iterazione \textbf{generale}
  \[x_{k+1} = x_k - a_k \nabla f(x_k)\]
  e si differenziano per la scelta della direzione di discesa e della lunghezza del passo $d_k$ e $a_k$, 
- le quali sono fortemente influenzate da $\nabla f(x_k)$ (\href{https://virtuale.unibo.it/mod/resource/view.php?id=750335}{slides Metodi di Discesa} pg 65/79 per metodo del gradiente coniugato)
+ le quali sono fortemente influenzate da $\nabla f(x_k)$ (\href{https://virtuale.unibo.it/mod/resource/view.php?id=750335}{slide Metodi di Discesa} pg 65/79 per metodo del gradiente coniugato)
 allora avverrà che nel metodo del gradiente si presenterà prima una serie di iterati molto
  vicini l'uno dall'altro che si allontanano meno velocemente dalla vera soluzione, mantenendo quindi un PSNR
  quasi costante, poiché all'iterato successivo sommiamo una quantità molto piccola dal momento

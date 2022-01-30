@@ -1,4 +1,4 @@
 # CalcoloNumerico
-image deblurring
+progetto universitario sul _image deblurring_
 
-per avere una dettagliata analisi del progetto leggere il file RelazioneProgettoCalcolo.pdf
+Per avere una dettagliata analisi del progetto leggere il file [RelazioneProgettoCalcolo.pdf](https://github.com/ali-benny/CalcoloNumerico/blob/main/RelazioneProgettoCalcolo.pdf)

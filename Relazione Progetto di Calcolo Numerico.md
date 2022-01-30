@@ -6,9 +6,9 @@ Benatti Alice, Manuelli Matteo, Qayyum Shahbaz Ali
 
 ### 1.Introduzione
 
-Per svolgere il progetto si farà uso dei moduli `numpy , skimage e matplotlib` utilizzando il linguaggio Python. Il progetto ha come scopo quello di comprendere e mettere in atto metodi per ricostruire immagini blurrate e svolgere il lavoro opposto, quindi generare immagini corrotte (dal rumore) a partire da un immagine originale. 
+Per svolgere il progetto si farà uso dei moduli `numpy , skimage e matplotlib` utilizzando il linguaggio Python. Il progetto ha come scopo quello di comprendere e mettere in atto metodi per ricostruire immagini blurrate e svolgere il lavoro opposto, quindi generare immagini corrotte (dal rumore) a partire da un'immagine originale. 
 
-Il problema che ci è stato presentato riguarda la ricostruzione di immagini corrotte attraverso il blur Gaussiano. Verrà analizzata inizialmente l’immagine `data.camera()` importata da `skimage` , successivamente verranno analizzate un set di 8 immagini con oggetti geometrici di colore uniforme su sfondo nero, realizzate da noi. Il problema di deblur consiste nella ricostruzione di un immagine a partire da un dato acquisito mediante il seguente modello:
+Il problema che ci è stato presentato riguarda la ricostruzione di immagini corrotte attraverso il blur Gaussiano. Verrà analizzata inizialmente l’immagine `data.camera()` importata da `skimage` , successivamente verranno analizzate un set di 8 immagini con oggetti geometrici di colore uniforme su sfondo nero, realizzate da noi. Il problema di deblur consiste nella ricostruzione di un'immagine a partire da un dato acquisito mediante il seguente modello:
 
 <div style="text-align:center">b = Ax + η</div>
 
@@ -16,7 +16,7 @@ Dove b rappresenta l’immagine corrotta, x l’immagine originale che vogliamo 
 
 Affinché risultino chiari i valori a cui andremo a riferirci nella relazione, bisogna tenere ben presente il significato di questi due parametri. 
 
-**PSNR** (Peak Signal to Noise Ratio): Misura la qualità di un immagine ricostruita rispetto all'immagine originale, la formula per calcolarlo è la seguente:  $PSNR = log_{10}(\frac{max\;x^\ast}{\sqrt{MSE}})$
+**PSNR** (Peak Signal to Noise Ratio): Misura la qualità di un'immagine ricostruita rispetto all'immagine originale, la formula per calcolarlo è la seguente:  $PSNR = log_{10}(\frac{max\;x^\ast}{\sqrt{MSE}})$
 
 **MSE** (Mean Squared Error):  Con la sigla ci riferiamo all'errore quadratico medio ed è così ottenuto: $MSE = \sqrt[2]{\frac{\sum_{i=1}^n\sum_{j=1}(x^{\ast}_{ij}-x_{ij})}{nm}}$
 
@@ -179,11 +179,11 @@ Passando alla valutazione dell'immagine con testo:
 
 
 
-In questa immagine abbiamo una raccolta di prime pagine di giornale che ci permettono di osservare e valutare meglio la differenza tra l'immagine originale e la versione corrotta, per esempio con `σ = 0,5` otteniamo un un immagine con del testo ancora leggibile sebbene meno nitida, la difficoltà inizia ad essere maggior invece con `σ = 1` dove le scritte più piccole diventano quasi illeggibili, con `σ = 1.3` il PSNR diminuisce ancora sebbene non molto rispetto rispetto a sigma uguale a 1, ma in questo caso anche le scritte più grandi, fatta eccezione per i titoli, perdono di chiarezza. 
+In questa immagine abbiamo una raccolta di prime pagine di giornale che ci permettono di osservare e valutare meglio la differenza tra l'immagine originale e la versione corrotta, per esempio con `σ = 0,5` otteniamo un un'immagine con del testo ancora leggibile sebbene meno nitida, la difficoltà inizia ad essere maggior invece con `σ = 1` dove le scritte più piccole diventano quasi illeggibili, con `σ = 1.3` il PSNR diminuisce ancora sebbene non molto rispetto rispetto a sigma uguale a 1, ma in questo caso anche le scritte più grandi, fatta eccezione per i titoli, perdono di chiarezza. 
 
 
 
-### 2. Ricostruzione di un immagine rispetto una versione corrotta
+### 2. Ricostruzione di un'immagine rispetto una versione corrotta
 
 Una possibile ricostruzione dell'immagine originale $x$ partendo dall'immagine corrotta $b$ è la soluzione naive data dal minimo del seguente problema di ottimizzazione:                                                      
 
